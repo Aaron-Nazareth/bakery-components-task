@@ -26,11 +26,11 @@ const Cakes = () => {
     const listedCakes = cakes.map(cake => {
         return( <>
             <h3>Cake name: {cake.cakeName}</h3>
-            <p>Ingredients:</p>
+            <p><b>Ingredients:</b></p>
             <li>{cake.ingredients.map(ingredient => {
                 return <li key={ingredient}>{ingredient}</li>
             })}</li>
-            <p> Cake rating: {cake.rating}</p>
+            <p><b>Cake rating: </b>{cake.rating}</p>
         </>
         )
     })
